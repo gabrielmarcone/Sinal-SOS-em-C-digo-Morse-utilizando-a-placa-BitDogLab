@@ -1,5 +1,5 @@
 
-# 🚀 Projeto: Sinal SOS em Código Morse com Raspberry Pi Pico e BitDogLab
+# 🚀 Projeto: Sinal SOS em Código Morse com Raspberry Pi Pico W e BitDogLab
 
 ## 📋 Descrição
 Este projeto implementa o envio de um sinal SOS em código Morse utilizando um LED externo conectado a uma placa de desenvolvimento **Raspberry Pi Pico** com suporte da **BitDogLab**. O sinal SOS é transmitido através de pulsos luminosos, seguindo o padrão internacional de código Morse:
@@ -11,19 +11,12 @@ Este projeto implementa o envio de um sinal SOS em código Morse utilizando um L
 - **Intervalo entre ciclos completos do sinal SOS**: 3 segundos.
 
 ## 🔧 Funcionalidade
-A funcionalidade principal do projeto é enviar repetidamente o sinal SOS (três pontos, três traços, três pontos) utilizando um LED externo conectado ao pino GPIO 12 da Raspberry Pi Pico. O programa segue os tempos definidos para cada ponto, traço e intervalos, garantindo a precisão do sinal transmitido.
-
-## 🖥️ Hardware Utilizado
-- **Placa Raspberry Pi Pico**
-- **Placa de desenvolvimento BitDogLab**
-- **LED externo**
-- **Resistor (220 Ω)**
-- **Cabo USB para alimentação e comunicação**
+A funcionalidade principal do projeto é enviar repetidamente o sinal SOS (três pontos, três traços, três pontos) utilizando um LED externo conectado ao pino GPIO 13 da Raspberry Pi Pico. O programa segue os tempos definidos para cada ponto, traço e intervalos, garantindo a precisão do sinal transmitido.
 
 ## ▶️ Como Executar o Projeto
 
 ### 1. **Conexão do LED**
-- Conecte o terminal positivo do LED ao pino GPIO 12 da Raspberry Pi Pico.
+- Conecte o terminal positivo do LED ao pino GPIO 13 da Raspberry Pi Pico.
 - Conecte o terminal negativo do LED a um resistor de 220 Ω.
 - Conecte o outro terminal do resistor ao pino GND da Raspberry Pi Pico.
 
@@ -43,8 +36,10 @@ A funcionalidade principal do projeto é enviar repetidamente o sinal SOS (três
 - **IDE**: Visual Studio Code
 - **Extensões**:
   - Wokwi for VS Code
-  - PlatformIO
-- **Compilador**: SDK da Raspberry Pi Pico com suporte a C/C++
+  - C/C++ Extension Pack
+  - Raspberry Pi Pico
+  - CMake Tools
+- **Compilador**: SDK v2.1.0 da Raspberry Pi Pico W com suporte a C/C++
 
 ## 🌐 Simulação
 O projeto pode ser simulado online usando a plataforma [Wokwi](https://wokwi.com/), permitindo testar o comportamento do LED antes de carregar o código na placa física.
@@ -54,6 +49,3 @@ Sinta-se à vontade para contribuir com melhorias ou sugestões para este projet
 1. Fork este repositório.
 2. Crie uma nova branch para sua funcionalidade.
 3. Envie um Pull Request detalhando as alterações realizadas.
-
-## 📝 Licença
-Este projeto é licenciado sob a Licença MIT. Consulte o arquivo LICENSE para mais detalhes.
